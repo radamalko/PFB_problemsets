@@ -1,0 +1,182 @@
+    1  cd /bin/ls
+    2  cd /bin/
+    3  ls
+    4  ls -l
+    5  ls-lt
+    6  ls -lt
+    7  ls -lt | head
+    8  date ; sleep 2 ; date
+    9  cd ~
+   10  curl -0 https://raw.githubusercontent.com/prog4biol/pfb2024/master/files/cuffdiff.txt
+   11  curl -0 https://raw.githubusercontent.com/prog4biol/pfb2024/master/files/cuffdiff.txt
+   12  curl -O  https://raw.githubusercontent.com/prog4biol/pfb2024/master/files/cuffdiff.txt
+   13  ls
+   14  head cuffdiff.txt
+   15  head cuffdiff.txt | wc -l
+   16  ls -l cuffdiff.txt
+   17  ls cuffdiff.txt
+   18  ls -l cuffdiff.txt
+   19  cd ~
+   20  grep Chr9 cuffdiff.txt >> fav_chr_cuffdiff.txt
+   21  cat blablabla.txt
+   22  cat blablabla.txt > errors.txt
+   23  cat blablabla.txt 2> errors.txt
+   24  cat fav_chr_currdiff.txt blablabla.file
+   25  cat fav_chr_cuffdiff.txt blablabla.file 1> out.txt 2> err.txt
+   26  cat fav_chr_cuffdiff.txt blablabla.file > out.txt 2> err.txt
+   27  cat fav_chr_cuffdiff.txt blablabla.file &> all_out_err.txt
+   28  ls
+   29  cat cuffdiff.txt
+   30  ls
+   31  cat errors.txt
+   32  cat error.txt
+   33  cat all_out_err.txt
+   34  cd pwd
+   35  pwd
+   36  cd ..
+   37  pwd
+   38  ls
+   39  wc -l
+   40  ls | wc -1
+   41  ls | wc -l
+   42  mkdir PFB_problemsets
+   43  cd ~
+   44  mkdir PFB_problemsets
+   45  pwd
+   46  curl -O https://raw.githubusercontent.com/prog4biol/pfb2024/master/files/sequences.nt.fa
+   47  wc -l
+   48  ls
+   49  wc -l sequences.nt.fa
+   50  wc --chars
+   51  wc -c
+   52  wc -c sequences.nt.fa
+   53  head sequences.nt.fa
+   54  tail sequences.nt.fa
+   55  grep ">"
+   56  grep ">" sequences.nt.fa
+   57  cat sequences.nt.fa
+   58  cat sequences.nt.fa > tmp
+   59  cat tmp
+   60  grep ">" sequences.nt.fa
+   61  grep > sequences.nt.fa
+   62  cat sequences.nt.fa
+   63  curl -O https://raw.githubusercontent.com/prog4biol/pfb2024/master/files/sequences.nt.fa
+   64  mv sequences.nt.fa
+   65  mv sequences.nt.fa cancer_genes.fasta
+   66  ls
+   67  curl -O https://raw.githubusercontent.com/prog4biol/pfb2024/master/files/cuffdiff.txt
+   68  ls
+   69  head cuffdiff.txt
+   70  sort cuffdiff.txt
+   71  sort -k 10 -r cuffdiff.txt
+   72  sort -k 10 -r cuffdiff.txt | cut -f 1 | head -100 > sorted.cuffdiff.out
+   73  cat sorted.cuffdiff.out
+   74  uniq sorted.cuffdiff.out
+   75  cut -f 10 cuffdiff.txt
+   76  sort -k 10 -r cuffdiff.txt
+   77  sort -k 10 -r cuffdiff.txt | cut -f 10
+   78  sort -k 10 -r cuffdiff.txt | cut -f 10 | less
+   79  sort -k 10 -r -n cuffdiff.txt | cut -f 10 | less
+   80  sort -k 10 -r -n cuffdiff.txt 
+   81  sort -k 10 -r -n cuffdiff.txt > sorted.cuffdiff.out
+   82  ls
+   83  wc cuffdiff.txt sorted.cuffdiff.out
+   84  man head
+   85  head n 1000
+   86  head n 1000 sorted.cuffdiff.out
+   87  head n 1000 sorted.cuffdiff.out
+   88  man head
+   89  head -n 500 sorted.cuffdiff.out
+   90  head -n 500 sorted.cuffdiff.out > top100.sorted.cuffdiff.out
+   91  ls
+   92  man cut
+   93  $ ssh-keygen -t ed25519 -C "your_email@example.com"
+   94  ssh-keygen -t ed25519 -C "your_email@example.com"
+   95  eval "$(ssh-agent -s)"
+   96  open ~/.ssh/config
+   97  vi ~/.ssh/config
+   98  vi ~/.ssh/config
+   99  cat  ~/.ssh/id_ed25519.pub
+  100  cd PFB_problemsets
+  101  echo "# PFB_problemsets" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin https://github.com/radamalko/PFB_problemsets.git\ngit push -u origin main
+  102  echo "# PFB_problemsets" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin git@github.com:radamalko/PFB_problemsets.git\ngit push -u origin main
+  103  echo "# PFB_problemsets" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin git@github.com:radamalko/PFB_problemsets.git\ngit push -u origin main
+  104  ls
+  105  rm README.md
+  106  echo "# PFB_problemsets" >> README.md\ngit init\ngit add README.md\ngit commit -m "first commit"\ngit branch -M main\ngit remote add origin git@github.com:radamalko/PFB_problemsets.git\ngit push -u origin main
+  107  git clone git@github.com:radamalko/PFB_problemsets.git
+  108  ls
+  109  vi git_exercises.txt
+  110  git_exercises.txt
+  111  cat git_exercises.txt
+  112  git status
+  113  git add git_exercises.txt
+  114  git status
+  115  git commit -m 'added a line of text'
+  116  git push
+  117  git push origin main
+  118  vi .git/config
+  119  git push origin main
+  120  git pull
+  121  git push origin main
+  122  ls
+  123  git pull
+  124  git pull origin main
+  125  git pull
+  126  git push origin main
+  127  git pull
+  128  git pull origin main
+  129  git pull origin main
+  130  git pull origin main
+  131  git push origin main
+  132  ls
+  133  git config pull.rebase false
+  134  git pull origin main
+  135  git push origin main
+  136  git pull origin main
+  137  cd ..
+  138  rm -rf PFB_problemsets
+  139  git clone git@github.com:radamalko/PFB_problemsets.git
+  140  cd PFB_problemsets
+  141  ls
+  142  vi git_exercises.txt
+  143  git add git_exercises.txt
+  144  git commit -am 'initial commit'
+  145  git config --global --edit
+  146  git add git_exercises.txt
+  147  git commit -am 'initial commit'
+  148  git push
+  149  cd ~
+  150  git clone git@github.com:prog4biol/pfb2024.git
+  151  ls
+  152  cd pfb2024
+  153  git pull
+  154  cd ~
+  155  ls
+  156  cat top100.sorted.cuffdiff.out
+  157  cat -k 10 top100.sorted.cuffdiff.out
+  158  man cut
+  159  cat top100.sorted.cuffdiff.out
+  160  less -S sorted.cuffdiff.out  head
+  161  less -S sorted.cuffdiff.out  |tab head
+  162  less -t sorted.cuffdiff.out  |tab -S
+  163  man less
+  164  tab sorted.cuffdiff.out| head
+  165  less -F sorted.cuffdiff.out
+  166  less -F sorted.cuffdiff.out | tab
+  167  less -F sorted.cuffdiff.out  | head
+  168  less -F sorted.cuffdiff.out  | cut -f 10 
+  169  sort -k 10 -r -g cuffdiff.txt > sorted.cuffdiff.out
+  170  less -F sorted.cuffdiff.out  | cut -f 10 
+  171  cat sorted.cuffdiff.out  | cut -f 10 
+  172  cat sorted.cuffdiff.out  | cut -f 10 | head
+  173  cat sorted.cuffdiff.out  | cut -f 10 | tail
+  174  head -100  sorted.cuffdiff.out
+  175  head -100  sorted.cuffdiff.out | cut -f 10
+  176  head -100  sorted.cuffdiff.out | cut -f 10 | more
+  177  head -100  sorted.cuffdiff.out > top100.sorted.cuffdiff.out
+  178  head -100  sorted.cuffdiff.out | cut -f 1 
+  179  head -100  sorted.cuffdiff.out | cut -f 1 | wc -l
+  180  head -100  sorted.cuffdiff.out | cut -f 1 | sort | uniq | wc -l
+  181  history
+  182  history -1000
