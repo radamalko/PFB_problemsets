@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-count = -1
+count = 50
 if count > 0:
   message = "positive"
   print(count, message)
@@ -8,4 +8,13 @@ elif count < 0:
   print(count, message)
 else:
   print('must be 0')
+
+if count%2 == 1:
+  message = "odd number"
+  print(count, message)
+elif count%3 == 0:
+  message = "is devisible by 3"
+  print(count, message)
+else:
+  print('must be even')
 
