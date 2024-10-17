@@ -1,0 +1,74 @@
+#!/usr/bin/env python3
+
+#this is Q2
+taxa_string = "sapiens : erectus : neanderthalensis"
+print(taxa_string)
+
+taxa_string.split(' : ')
+taxa_list = taxa_string.split(' : ')
+print(taxa_list)
+
+print(taxa_list[1])
+
+print(type(taxa_string))
+print(type(taxa_list))
+
+print(sorted(taxa_list))
+
+sorted_taxa_list = sorted(taxa_list, key=len)
+print('Sorted list:',sorted_taxa_list)
+
+#this is Q4
+
+count=1
+while True:
+  print("count:",count)
+  count+=1
+  if count == 101:
+    break
+print("done")
+
+#this is Q5
+
+count=1000
+product=1
+
+while True:
+  product *= count
+  count -= 1
+  if count == 0:
+    break
+
+print(f"factorial={product}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
