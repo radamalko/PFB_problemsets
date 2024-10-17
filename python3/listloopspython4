@@ -51,7 +51,6 @@ for number in numbers:
 #print(sorted(numbers))
 
   sortedlist=sorted(numbers)
-"""
 
 numbers = [101,2,15,22,95,33,2,27,72,15,52]
 sortedlist=sorted(numbers)
@@ -91,9 +90,11 @@ for num in range(int(num_min),int(num_max)):
 print(evenlist2)
 print(oddlist2)
 
+"""
 
-
-
+listdna = ['ATGCCCGGCCCGGC','GCGTGCTAGCAATACGATAAACCGG', 'ATATATATCGAT','ATGGGCCC']
+for seq in listdna:
+  print(listdna.index(seq),"\t",len(seq),"\t",seq)
 
 
 
