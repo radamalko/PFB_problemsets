@@ -1,22 +1,22 @@
 #!/usr/bin/env python3
-
+"""
 #this is Q2
 taxa_string = "sapiens : erectus : neanderthalensis"
-print(taxa_string)
+#print(taxa_string)
 
 taxa_string.split(' : ')
 taxa_list = taxa_string.split(' : ')
-print(taxa_list)
+#print(taxa_list)
 
-print(taxa_list[1])
+#print(taxa_list[1])
 
-print(type(taxa_string))
-print(type(taxa_list))
+#print(type(taxa_string))
+#print(type(taxa_list))
 
-print(sorted(taxa_list))
+#print(sorted(taxa_list))
 
 sorted_taxa_list = sorted(taxa_list, key=len)
-print('Sorted list:',sorted_taxa_list)
+#print('Sorted list:',sorted_taxa_list)
 
 #this is Q4
 
@@ -26,7 +26,7 @@ while True:
   count+=1
   if count == 101:
     break
-print("done")
+#print("done")
 
 #this is Q5
 
@@ -39,18 +39,57 @@ while True:
   if count == 0:
     break
 
-print(f"factorial={product}")
+#print(f"factorial={product}")
 
 
 
+numbers = [101,2,15,22,95,33,2,27,72,15,52]
+for number in numbers: 
+  if number%2 == 0:
+  #print(number) 
+ 
+#print(sorted(numbers))
 
+  sortedlist=sorted(numbers)
+"""
 
+numbers = [101,2,15,22,95,33,2,27,72,15,52]
+sortedlist=sorted(numbers)
+evenlist = []
+oddlist = []
 
+for num in sortedlist:
+#print(num)
+  if num%2 == 0:
+    evenlist.append(num)
+  else:
+    oddlist.append(num)
+print(sum(evenlist),'\n')
 
+print(sum(oddlist))
 
+for num in (range(1,101)):
+  print(num)
 
+print([num+5 for num in range(1,101)])
 
+import sys
 
+num_min = sys.argv[1]
+num_max = sys.argv[2]
+
+evenlist2 = []
+oddlist2 = []
+
+for num in range(int(num_min),int(num_max)):
+ # print(num)
+  if num%2 == 1:
+    oddlist2.append(num)
+  else:
+    evenlist2.append(num)
+
+print(evenlist2)
+print(oddlist2)
 
 
 
