@@ -64,3 +64,54 @@ with open("Python_06.txt","r") as seq_read, open("Python_06_upper.txt","w") as s
     seq_write.write(f"{lineupp}\n")
 
 
+seq_file_obj = open("Python_06.seq.txt","r")
+for line in seq_file_obj:
+  print(line)
+
+#test run for question 7
+test = 'atgc'
+testrev = (test[::-1])
+
+print(testrev)
+
+comp1 = (testrev.replace('a','T'))
+comp2 = (comp1.replace('t','A'))
+comp3 = (comp2.replace('c','G'))
+comp4 = (comp3.replace('g','C'))
+
+print(comp4) 
+
+
+#real thing try num 7
+# with open("Python_06.txt","r") as seq_read, open("Python_06_upper.txt","w") as seq_write:
+seq_file_fasta = open("Python_06.seq.fasta","w")
+seq_file_obj = open("Python_06.seq.txt","r")
+for line in seq_file_obj: 
+  
+  line = line.rstrip()
+
+  gene_id, seq = line.split('\t')
+  
+  seqrev = seq[::-1]
+  
+  comp1 = (seqrev.replace('A','t'))
+  comp2 = (comp1.replace('T','a'))
+  comp3 = (comp2.replace('C','g'))
+  comp4 = (comp3.replace('G','c'))
+ 
+  print(">"+gene_id+"\n"+comp4,file=seq_file_fasta )
+#can use print to write into the new seq_file_fasta, other way than seq_file_fasta.write)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
