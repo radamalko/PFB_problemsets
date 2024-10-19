@@ -23,7 +23,21 @@ for line in file:
   rename = re.sub(r'Nobody','Bob',line)
   print(rename,file=renamefile)
 
+# Question 3
+#test
+fasta1 = 'ATGAAC'
+found=re.findall(r"A",fasta1)
+print(found)
+  
+#real question 3
+header ={}
+fasta2 = open("Python_07.fasta","r")
+for line in fasta2:
+  fasta2 = re.findall(r"^>\S+\s.*",line)
+  if fasta2: 
+    print(fasta2)
 
+#question 4
 
 
 
